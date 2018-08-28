@@ -22,20 +22,20 @@ int main () {
     scanf ("%lf", &ticktack); //This registers the value given to the program and directs it to be saved at the variable ticktack.
 
     //Here the analysis of the integer that was submitted takes place.
-    if (2 < ticktack < 12); { //If the value that the users submits is in between the range 2-12, this message will come forward.
+    if (2 <= ticktack && ticktack >= 12) { //If the value that the users submits is in between the range 2-12, this message will come forward.
         scanf ("%lf", &greeting);
-        printf ("Good morning!");
+        printf ("Good Morning!");
     }
-    if (12 < ticktack < 19 ); { //If the value that the users submits is in between the range 12-19, this message will come forward.
+    if (13 <= ticktack && ticktack >= 19) { //If the value that the users submits is in between the range 12-19, this message will come forward.
         scanf ("%lf", &greeting);
-        printf ("Good afternoon.");
+        printf ("Good Afternoon.");
     }
-    if (19 < ticktack < 23); { //If the value that the users submits is in between the range 19-23, this message will come forward.
+    if (20 <= ticktack && ticktack >= 23) { //If the value that the users submits is in between the range 19-23, this message will come forward.
         scanf ("%lf", &greeting);
-        printf ("Good evening.");
+        printf ("Good Evening.");
     }
-    if (ticktack > 2); { //If the value that the users submits is less than 2, then the program will just tell him goodnight and shut down.
+    if (ticktack <= 0 && ticktack = 1) { //If the value that the users submits is less than 2, then the program will just tell him goodnight and shut down.
         scanf ("%lf", &greeting);
-        printf ("Good night.");
+        printf ("Good Night.");
     }
 }
